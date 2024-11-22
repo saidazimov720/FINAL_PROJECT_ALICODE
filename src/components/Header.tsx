@@ -5,9 +5,8 @@ import { setSubject } from '../features/search/searchSlice';
 
 const Header: React.FC = () => {
   const dispatch = useDispatch();
-  const subjects = ['All', 'Math', 'Mother Language', 'History', 'Biology', 'Physics', 'English', 'Russian', 'Physical education'];
+  const subjects = ['All', 'Math', 'Science', 'History', 'Art'];
 
-  
   const handleSubjectChange = (event: SelectChangeEvent<string>) => {
     dispatch(setSubject(event.target.value));
   };
@@ -20,7 +19,7 @@ const Header: React.FC = () => {
         </Typography>
         <Box>
           <Select
-            defaultValue="All"
+            value="All"
             onChange={handleSubjectChange}
             sx={{ color: 'white', borderColor: 'white' }}
           >
