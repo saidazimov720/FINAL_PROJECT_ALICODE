@@ -5,7 +5,7 @@ import { setSubject } from '../features/search/searchSlice';
 
 const Header: React.FC = () => {
   const dispatch = useDispatch();
-  const subjects = ['All', 'Math', 'Science', 'History', 'Art'];
+  const subjects = ['Hammasi', 'Matematika', 'Ona tili', 'Adabiyot', 'Chizmachilik', 'Tasviriy sanat', 'Botanika', 'Biologiya','Odam va uning salomatligi', 'Ingliz tili','Rus tili','Informatika','Geografiya',''];
 
   const handleSubjectChange = (event: SelectChangeEvent<string>) => {
     dispatch(setSubject(event.target.value));
